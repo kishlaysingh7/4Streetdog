@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4STREET Dogs - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">4STREET Dogs</div>
+    <nav>
+        
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="track.html">Track a Dog</a></li>
+        <li><a href="adopt.html">Adopt a Dog</a></li>
+        <li><a href="ngo.html">NGO Partners</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i> <!-- Default icon -->
+        </button>
+      </ul>
+      
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Give Street Dogs a Second Chance</h1>
+      <p>Track, Rescue, and Adopt with PawTrack</p>
+      <div class="cta-buttons">
+        <a href="adopt.html" class="cta-button">Adopt Now</a>
+        <a href="donate.html" class="cta-button secondary">Donate Today</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="/assets/cute.png" alt="Happy Dog">
+    </div>
+  </section>
+
+  <!-- Adoption Counter -->
+  <section class="counter-section">
+    <div class="counter-card">
+      <h3><span id="rescued-counter">0</span>+</h3>
+      <p>Dogs Rescued</p>
+    </div>
+    <div class="counter-card">
+      <h3><span id="adopted-counter">0</span>+</h3>
+      <p>Dogs Adopted</p>
+    </div>
+    <div class="counter-card">
+      <h3><span id="ngo-counter">0</span>+</h3>
+      <p>NGO Partners</p>
+    </div>
+  </section>
+
+  <!-- Featured Dogs with Search/Filter -->
+  <section class="featured-dogs">
+    <div class="search-filter">
+      <input type="text" id="search-dogs" placeholder="Search by name or breed...">
+      <select id="filter-age">
+        <option value="">All Ages</option>
+        <option value="puppy">Puppy (0-1 year)</option>
+        <option value="young">Young (1-3 years)</option>
+        <option value="adult">Adult (3+ years)</option>
+      </select>
+      <select id="filter-size">
+        <option value="">All Sizes</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+    </div>
+    <h2>Meet Our Friends</h2>
+    <div id="dog-list" class="dog-list"></div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>Success Stories</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <img src="assets/dog15.jpg" alt="Happy Adopter">
+        <p>"PawTrack helped me find my perfect companion!"</p>
+        <h4>- Sarah Johnson</h4>
+      </div>
+      <div class="testimonial">
+        <img src="assets/dog10.jpg" alt="Happy Adopter">
+        <p>"The adoption process was smooth and rewarding."</p>
+        <h4>- Michael Chen</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-content">
+      <h2 class="cta-heading">Ready to Make a Difference?</h2>
+      <p class="cta-description">Join us and help make the world a better place by volunteering today.</p>
+      <a href="volunteer.html" class="cta-button">Become a Volunteer</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>contact@pawtrack.org</p>
+        <p>+1 (555) 123-4567</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <p>&copy; 2023 PawTrack. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
