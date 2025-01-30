@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4STREET Dogs - Adopt a Dog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">4STREET Dogs</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="track.html">Track a Dog</a></li>
+        <li><a href="adopt.html">Adopt a Dog</a></li>
+        <li><a href="ngo.html">NGO Partners</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="adopt-section">
+    <h2>Adopt a Dog</h2>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search for a dog..." onkeyup="searchDogs()">
+    </div>
+    <div id="dog-list" class="dog-list">
+      <!-- Dog cards will be dynamically inserted here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 PawTrack. All rights reserved.</p>
+  </footer>
+
+  <script src="sript.js"></script>
+</body>
+</html>
