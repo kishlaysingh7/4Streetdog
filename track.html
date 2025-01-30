@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawTrack - Track a Dog</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">PawTrack</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="track.html">Track a Dog</a></li>
+        <li><a href="adopt.html">Adopt a Dog</a></li>
+        <li><a href="ngo.html">NGO Partners</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <section class="track-section">
+    <h2>Track a Dog</h2>
+    <div id="map"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 PawTrack. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
